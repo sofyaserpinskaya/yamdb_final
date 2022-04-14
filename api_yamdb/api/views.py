@@ -1,26 +1,28 @@
 import random
+
 from django.core.mail import send_mail
 from django.db import IntegrityError
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import filters, mixins, status, viewsets, generics
+from rest_framework import filters, generics, mixins, status, viewsets
 from rest_framework.decorators import action, api_view, permission_classes
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 
 import api_yamdb.settings as settings
-from reviews.models import Review, Title, User, Category, Genre
+from reviews.models import Category, Genre, Review, Title, User
 from .filters import TitleFilter
 from .permissions import (
     AdminOnly, AdminOrReadOnly, AuthorModeratorAdminOrReadOnly
 )
 from .serializers import (
-    ReviewSerializer, CommentSerializer, UserSerializer, CategorySerializer,
-    GenreSerializer, TitleGetSerializer, TitlePostPatchDeleteSerializer,
-    AccountSerializer, GetTokenSerializer, SignupSerializer
+    AccountSerializer, CategorySerializer, CommentSerializer,
+    GenreSerializer, GetTokenSerializer, ReviewSerializer,
+    SignupSerializer, TitleGetSerializer,
+    TitlePostPatchDeleteSerializer, UserSerializer
 )
 
 
@@ -29,8 +31,8 @@ SIGNUP_ERROR = '{value} уже занят. Используйте другой {
 
 class CreateListDestroyViewSet(
     mixins.CreateModelMixin,
-    mixins.ListModelMixin,
     mixins.DestroyModelMixin,
+    mixins.ListModelMixin,
     viewsets.GenericViewSet
 ):
     pass

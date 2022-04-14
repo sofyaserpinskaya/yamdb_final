@@ -13,7 +13,6 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 
 import api_yamdb.settings as settings
-from reviews.models import Category, Genre, Review, Title, User
 from .filters import TitleFilter
 from .permissions import (
     AdminOnly, AdminOrReadOnly, AuthorModeratorAdminOrReadOnly
@@ -24,7 +23,7 @@ from .serializers import (
     SignupSerializer, TitleGetSerializer,
     TitlePostPatchDeleteSerializer, UserSerializer
 )
-
+from reviews.models import Category, Genre, Review, Title, User
 
 SIGNUP_ERROR = '{value} уже занят. Используйте другой {field}.'
 

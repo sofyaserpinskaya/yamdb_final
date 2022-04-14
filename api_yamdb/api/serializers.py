@@ -2,9 +2,7 @@ from datetime import datetime as dt
 
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
-
 from reviews.models import Category, Comment, Genre, Review, Title, User
-
 
 YEAR_VALIDATION_ERROR = 'Год выпуска не может быть больше текущего.'
 CATEGORY_VALIDATION_ERROR = (

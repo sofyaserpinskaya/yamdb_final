@@ -11,20 +11,18 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
+from reviews.models import Category, Genre, Review, Title, User
 
 import api_yamdb.settings as settings
 
 from .filters import TitleFilter
-from .permissions import (
-    AdminOnly, AdminOrReadOnly, AuthorModeratorAdminOrReadOnly
-)
-from reviews.models import Category, Genre, Review, Title, User
-from .serializers import (
-    AccountSerializer, CategorySerializer, CommentSerializer,
-    GenreSerializer, GetTokenSerializer, ReviewSerializer,
-    SignupSerializer, TitleGetSerializer,
-    TitlePostPatchDeleteSerializer, UserSerializer
-)
+from .permissions import (AdminOnly, AdminOrReadOnly,
+                          AuthorModeratorAdminOrReadOnly)
+from .serializers import (AccountSerializer, CategorySerializer,
+                          CommentSerializer, GenreSerializer,
+                          GetTokenSerializer, ReviewSerializer,
+                          SignupSerializer, TitleGetSerializer,
+                          TitlePostPatchDeleteSerializer, UserSerializer)
 
 SIGNUP_ERROR = '{value} уже занят. Используйте другой {field}.'
 

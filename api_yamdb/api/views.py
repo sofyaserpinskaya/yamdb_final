@@ -16,13 +16,14 @@ from rest_framework_simplejwt.tokens import AccessToken
 import api_yamdb.settings as settings
 from reviews.models import Category, Genre, Review, Title, User
 from .filters import TitleFilter
-from .permissions import (AdminOnly, AdminOrReadOnly,
-                          AuthorModeratorAdminOrReadOnly)
-from .serializers import (AccountSerializer, CategorySerializer,
-                          CommentSerializer, GenreSerializer,
-                          GetTokenSerializer, ReviewSerializer,
-                          SignupSerializer, TitleGetSerializer,
-                          TitlePostPatchDeleteSerializer, UserSerializer)
+from .permissions import (
+    AdminOnly, AdminOrReadOnly, AuthorModeratorAdminOrReadOnly
+)
+from .serializers import (
+    AccountSerializer, CategorySerializer, CommentSerializer, GenreSerializer,
+    GetTokenSerializer, ReviewSerializer, SignupSerializer, TitleGetSerializer,
+    TitlePostPatchDeleteSerializer, UserSerializer
+)
 
 SIGNUP_ERROR = '{value} уже занят. Используйте другой {field}.'
 

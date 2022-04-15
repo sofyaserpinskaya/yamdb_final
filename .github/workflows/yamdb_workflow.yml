@@ -40,7 +40,7 @@ jobs:
         with:
           push: true
           tags: sofyaserpinskaya/yamdb_final:latest
-          context: api_yamdb/
+          context: ./api_yamdb/
           file: api_yamdb/Dockerfile
 
   deploy:

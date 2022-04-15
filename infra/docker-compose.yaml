@@ -6,11 +6,9 @@ services:
     volumes:
       - /var/lib/postgresql/data/
     env_file:
-      - ../infra/.env
+      - ./.env
   web:
-    build:
-      context: ../
-      dockerfile: api_yamdb/Dockerfile
+    image: sofyaserpinskaya/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/app/static/
@@ -18,7 +16,7 @@ services:
     depends_on:
       - db
     env_file:
-      - ../infra/.env
+      - ./.env
 
   nginx:
     image: nginx:1.21.3-alpine

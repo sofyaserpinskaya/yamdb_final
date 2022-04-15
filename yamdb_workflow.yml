@@ -25,7 +25,6 @@ jobs:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     needs: tests
-    file: api_yamdb/Dockerfile
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2

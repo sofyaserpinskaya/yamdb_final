@@ -16,13 +16,12 @@
 
 ### Технологии
 
+```bash
 Django==2.2.16
-
 django-filter==21.1
-
 djangorestframework==3.12.4
-
 djangorestframework-simplejwt==5.0.0
+```
 
 ### Шаблон наполнения env-файла
 

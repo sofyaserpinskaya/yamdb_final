@@ -26,6 +26,7 @@ djangorestframework-simplejwt==5.0.0
 
 ### Шаблон наполнения env-файла
 
+```bash
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
 POSTGRES_USER=postgres
@@ -33,6 +34,7 @@ POSTGRES_PASSWORD=password
 DB_HOST=db
 DB_PORT=5432
 SECRET_KEY=secretkey
+```
 
 ### Запуск приложения в контейнерах
 

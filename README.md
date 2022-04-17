@@ -16,16 +16,16 @@
 
 ### Технологии
 
+```bash
 Django==2.2.16
-
 django-filter==21.1
-
 djangorestframework==3.12.4
-
 djangorestframework-simplejwt==5.0.0
+```
 
 ### Шаблон наполнения env-файла
 
+```bash
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
 POSTGRES_USER=postgres
@@ -33,6 +33,7 @@ POSTGRES_PASSWORD=password
 DB_HOST=db
 DB_PORT=5432
 SECRET_KEY=secretkey
+```
 
 ### Запуск приложения в контейнерах
 
@@ -72,4 +73,4 @@ docker-compose exec web python manage.py loaddata fixtures.json
 
 ### Документация API-сервера
 
-<http://127.0.0.1:8000/redoc/>
+<http://51.250.104.165/redoc/>

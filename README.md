@@ -8,11 +8,11 @@
 
 ### Команда разработчиков
 
-Софья Серпинская <https://github.com/sofyaserpinskaya>
+Софья Серпинская: <https://github.com/sofyaserpinskaya>
 
-Сергей Поляков <https://github.com/SergeyPolyakov87>
+Сергей Поляков: <https://github.com/SergeyPolyakov87>
 
-Динара Фатехова <https://github.com/Dinara-F>
+Динара Фатехова: <https://github.com/Dinara-F>
 
 ### Технологии
 

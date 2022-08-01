@@ -8,14 +8,11 @@
 
 ### Команда разработчиков
 
-Софья Серпинская - лид команды, реализация review, comments, управления пользователями
-<https://github.com/sofyaserpinskaya>
+[Софья Серпинская](https://github.com/sofyaserpinskaya) - лид команды, реализация review, comments, управления пользователями
 
-Сергей Поляков - реализация categories, genres, titles
-<https://github.com/SergeyPolyakov87>
+[Сергей Поляков](https://github.com/SergeyPolyakov87) - реализация categories, genres, titles
 
-Динара Фатехова - регистрация пользователей
-<https://github.com/Dinara-F>
+[Динара Фатехова](https://github.com/Dinara-F) - регистрация пользователей
 
 ### Технологии
 

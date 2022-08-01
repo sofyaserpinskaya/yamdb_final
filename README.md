@@ -1,27 +1,25 @@
-# api_yamdb
+# api_yamdb - API для проекта YaMDb
 
 ![yamdb workflow](https://github.com/sofyaserpinskaya/yamdb_final/workflows/yamdb_workflow/badge.svg)
 
 ## Описание
 
-Проект YaMDb собирает отзывы пользователей на различные произведения.
+Проект YaMDb собирает отзывы пользователей на различные произведения (фильмы, книги, музыка).
 
 ### Команда разработчиков
 
-Софья Серпинская: <https://github.com/sofyaserpinskaya>
+Софья Серпинская - лид команды, реализация review, comments, управления пользователями
+<https://github.com/sofyaserpinskaya>
 
-Сергей Поляков: <https://github.com/SergeyPolyakov87>
+Сергей Поляков - реализация categories, genres, titles
+<https://github.com/SergeyPolyakov87>
 
-Динара Фатехова: <https://github.com/Dinara-F>
+Динара Фатехова - регистрация пользователей
+<https://github.com/Dinara-F>
 
 ### Технологии
 
-```bash
-Django==2.2.16
-django-filter==21.1
-djangorestframework==3.12.4
-djangorestframework-simplejwt==5.0.0
-```
+Python, Django, PostgreSQL, Simple JWT, git
 
 ### Шаблон наполнения env-файла
 
@@ -66,11 +64,3 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```bash
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
-
-### Развернутый проект
-
-<http://51.250.104.165/api/v1/>
-
-### Документация API-сервера
-
-<http://51.250.104.165/redoc/>

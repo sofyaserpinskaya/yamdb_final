@@ -8,11 +8,13 @@
 
 ### Команда разработчиков
 
-[Софья Серпинская](https://github.com/sofyaserpinskaya) - лид команды, реализация review, comments, управления пользователями
+[Софья Серпинская](https://github.com/sofyaserpinskaya) - лид команды, реализация review, comments, управления пользователями + infra, workflows
 
 [Сергей Поляков](https://github.com/SergeyPolyakov87) - реализация categories, genres, titles
 
 [Динара Фатехова](https://github.com/Dinara-F) - регистрация пользователей
+
+[Яндекс.Практикум](https://github.com/yandex-praktikum) - tests
 
 ### Технологии
 
